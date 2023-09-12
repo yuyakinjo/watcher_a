@@ -5,7 +5,7 @@ on:
 
 jobs:
   watcher:
-    uses: yuyakinjo/caller_test/.github/workflows/watched.yml@main
+    uses: yuyakinjo/watched_a/.github/workflows/watched.yml@main
 
   build:
     runs-on: ubuntu-latest
