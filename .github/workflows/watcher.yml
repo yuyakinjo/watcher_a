@@ -1,0 +1,14 @@
+name: watcher
+
+on:
+  push:
+
+jobs:
+  watcher:
+    uses: yuyakinjo/caller_test/.github/workflows/watched.yml@main
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo Hello, world too!
