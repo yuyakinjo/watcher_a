@@ -1,17 +1,18 @@
 # 説明: pushしたら、job.watcher が watched_a リポジトリ の workflow を参照 して 実行
 # 注意：　watched_a リポジトリ の workflow を実行しているわけではない
 
-name: watcher
+name: hello worlds
 
 on:
   push:
 
 jobs:
-  watcher:
+  first_hello:
     uses: yuyakinjo/watched_a/.github/workflows/hello-world.yml@main
 
-  hello_world_too:
+  second_hello:
     runs-on: ubuntu-latest
+    needs: first_hello
     steps:
       - name: Run a one-line script
         run: echo Hello, world too!
