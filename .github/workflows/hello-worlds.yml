@@ -5,6 +5,7 @@ name: hello worlds
 
 on:
   push:
+  workflow_call: # 他のworkflow から呼びだされるのを許可
 
 jobs:
   first_hello:

@@ -1,0 +1,9 @@
+# wiki が更新されたら、hello-worlds.yml を実行する
+name: update wiki pages
+
+on:
+  gollum:
+
+jobs:
+  hello_worlds:
+    uses: ./.github/workflows/hello-worlds.yml
