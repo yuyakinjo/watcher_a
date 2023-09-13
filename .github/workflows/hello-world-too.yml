@@ -8,9 +8,9 @@ on:
 
 jobs:
   watcher:
-    uses: yuyakinjo/watched_a/.github/workflows/watched.yml@main
+    uses: yuyakinjo/watched_a/.github/workflows/hello-world.yml@main
 
-  build:
+  hello_world_too:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
