@@ -1,3 +1,6 @@
+# 説明: pushしたら、job.watcher が watched_a リポジトリ の workflow を参照 して 実行
+# 注意：　watched_a リポジトリ の workflow を実行しているわけではない
+
 name: watcher
 
 on:
